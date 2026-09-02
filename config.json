@@ -1,8 +1,0 @@
-{
-  "totalPortfolioValue": 100000,
-  "defaultCurrency": "USD",
-  "portfolio": {
-    "AAPL": 50,
-    "MSFT": 50
-  }
-}
