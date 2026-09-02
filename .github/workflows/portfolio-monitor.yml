@@ -56,11 +56,8 @@ on:
 # naming style); we map it to POSIX `TZ` here, which Node.js natively
 # respects so all date formatting in emails/Telegram renders in the
 # configured zone with zero code changes. Defaults to UTC if unset.
- env:
-  CONFIG_JSON: ${{ vars.CONFIG_JSON }}
-  RECIPIENT_EMAIL: ${{ vars.RECIPIENT_EMAIL }}
-  RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-
+env:
+  TZ: ${{ vars.TIME_ZONE || 'UTC' }}
 
 jobs:
   send-brief:
